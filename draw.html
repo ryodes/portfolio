@@ -10,6 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -51,24 +54,51 @@
 						<div class="inner">
 							<h1>First Game</h1>
 							<span class="image main"><img src="images/pic16.jpg" alt="" /></span>
-                            <div id="galerie">
-                                <ul id="galerie_mini">
-                                  <li>
-                                    <a href="images/jiraya-page-001.jpg" title="Titre de la photo 1"><img src="images/jiraya-page-001.jpg" alt="Le titre de la photo 1" /></a>    </li>
-                                  <li>
-                                    <a href="images/luffy-page-001.jpg" title="Titre de la photo 2"><img src="images/luffy-page-001.jpg" alt="Le titre de la photo 2" /></a>    </li>
-                                  <li>
-                                    <a href="images/saitama-page-001.jpg" title="Titre de la photo 3"><img src="images/saitama-page-001.jpg" alt="Le titre de la photo 3" /></a>    </li>
-                                  <li>
-                                    <a href="images/zoro-page-001.jpg" title="Titre de la photo 4"><img src="images/zoro-page-001.jpg" alt="Le titre de la photo 4" /></a>    </li>
-                                  <li>
-                                    <a href="images/crocodile-page-001.jpg" title="Titre de la photo 5"><img src="images/crocodile-page-001.jpg" alt="Le titre de la photo 5" /></a>    </li>
-                              </ul>
-                                <dl id="photo">
-                                  <dt>Titre de la photo 1</dt>
-                                  <dd><img id="big_pict" src="images/photo1.jpg" alt="Photo 1 en taille normale" /></dd>
-                                </dl>
-                              </div>
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+								  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								  <li data-target="#myCarousel" data-slide-to="1"></li>
+								  <li data-target="#myCarousel" data-slide-to="2"></li>
+								</ol>
+							  
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
+								  <div class="item active">
+									<img src="images/crocodile-page-001.jpg" alt="One Piece">
+									<div class="carousel-caption">
+									  <h3>Los Angeles</h3>
+									  <p>LA is always so much fun!</p>
+									</div>
+								  </div>
+							  
+								  <div class="item">
+									<img src="images/zoro-page-001.jpg" alt="Chicago">
+									<div class="carousel-caption">
+									  <h3>Chicago</h3>
+									  <p>Thank you, Chicago!</p>
+									</div>
+								  </div>
+							  
+								  <div class="item">
+									<img src="images/jiraya-page-001.jpg" alt="New York">
+									<div class="carousel-caption">
+									  <h3>New York</h3>
+									  <p>We love the Big Apple!</p>
+									</div>
+								  </div>
+								</div>
+							  
+								<!-- Left and right controls -->
+								<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+								  <span class="glyphicon glyphicon-chevron-left"></span>
+								  <span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel" data-slide="next">
+								  <span class="glyphicon glyphicon-chevron-right"></span>
+								  <span class="sr-only">Next</span>
+								</a>
+							</div>
 						</div>
 					</div>
 
@@ -116,11 +146,10 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
